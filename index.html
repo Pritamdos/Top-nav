@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <h1>Header Demo</h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+</body>
+<script src="./jquery-min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $('#nav').click(function () {
+            $(this).toggleClass('open');
+
+        });
+    });
+</script>
+
+</html>
